@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sudhir Yadav</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const print=function(){
+        console.log("sudhiryadav")
+    }
+    document.querySelector("#start").addEventListener("click",function(){
+        const inter=setInterval(print,2000);
+        document.getElementById("#stop").addEventListener("click",function(){
+        clearInterval(inter)
+    })
+    })
+    
+</script>
+</html>
